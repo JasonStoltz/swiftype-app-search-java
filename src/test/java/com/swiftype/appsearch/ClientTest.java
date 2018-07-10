@@ -67,7 +67,7 @@ class ClientTest {
     assertEquals(createResponse.get("name"), engineName);
 
     Map<String, Boolean> response = client.destroyEngine(engineName);
-    assertTrue(false);
+    assertTrue(response.get("deleted"));
   }
 
   @SuppressWarnings("unchecked")
